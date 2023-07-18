@@ -26,7 +26,7 @@
 	<div class="flex flex-col w-full">
 		<div class="flex flex-row w-full pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-32">
 			<div class="flex flex-col w-full items-center">
-				<h1 class="text-5xl font-bold pb-16">Who Are We?</h1>
+				<h1 class="text-5xl font-bold pb-16 text-center">Who Are We?</h1>
 				<p class="text-lg text-center pb-20">
 					The Nutrition Education Initiative (NEI) is a medical student lead organization that was
 					founded in 2020 with both an educational and research directed focus. The educational goal
