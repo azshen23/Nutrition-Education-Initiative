@@ -6,7 +6,7 @@
 
 <div class="flex flex-col h-screen w-screen">
 	<Header />
-	<div class="flex flex-row bg-white pl-48 pr-48 pt-16 pb-32">
+	<div class="flex flex-row bg-white pl-48 pr-48 pt-32 pb-32">
 		<div class="flex flex-col w-1/2 pr-20">
 			<h1 class="text-5xl font-bold pb-10">Empowering Students With Nutrition</h1>
 			<h1 class="text-2xl pb-10">Simple and Engaging Nutrition Education</h1>
