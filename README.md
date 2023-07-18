@@ -1,38 +1,9 @@
-# create-svelte
+# The Nutrition Education Initative
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+The Nutrition Education Initiative (NEI) is a medical student lead organization that was founded in 2020 with both an educational and research directed focus. The educational goal of NEI is to equip rural high school students with nutrition knowledge that will foster healthy eating behaviors beyond high school. The research goal of NEI is to examine attitude, behavioral, and knowledge changes through its education.
 
-## Creating a project
+The NEI was initiated to address the rising obesity rates, and related obesity sequelae such as stroke, heart disease, diabetes, and cancer. Obesity is a multifactorial disorder and requires a multidisciplinary approach in combating its epidemic. To date, the NEI has supplied over 20 hours of free nutrition education to the Mount Pleasant and Beal City Public Schools and plans to expand to neighboring rural high schools. The NEI currently has an IRB approved study that will examine if high school student behaviors will change after the intervention. The NEI has three medical school faculty advisors who have provided oversight over current research: Dr. Ariel Cascio, Dr. Jesse Bakke, and Dr. Samantha Hahn. Nathan Shen, a current M3 medical student, has currently led the NEI with support of fellow medical students.
 
-If you're seeing this, you've probably already done this step. Congrats!
+The NEI currently has focused its nutritional curriculum on basic macronutrients, obesity and associated diseases, nutrition label literacy, and the ability to plan a meal. Though the NEI currently involves only medical students and faculty, we look to incorporate CMU pre-health students to support the initiative. The end goal is to have each medical student lead a group of CMU pre-health students to teach local high schools and collect data regarding attitude, behavioral, and knowledge changes. By using volunteering, research, and leadership experiences to promote a wide range of student learning opportunities, the goals of the NEI align with President Robert O. Davies Three Imperatives of “Nurturing Student Success, Fostering Scholarly Activity, and Strengthening Partnerships in Michigan and Beyond” in CMU’s Strategic Plan. The NEI is a strong example of a community partnership that benefits high school students, pre-health/medical students, and CMU faculty as all three entities have the potential to learn through this collaboration.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+The NEI currently looks to CMU and CMED to establish a community partnership that would enable us to receive further recognition for research funding and cement a long-lasting program in CMU towards targeting obesity.
