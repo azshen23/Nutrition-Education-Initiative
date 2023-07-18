@@ -4,7 +4,7 @@
 	import Footer from '../components/footer.svelte';
 </script>
 
-<div class="flex flex-col h-screen w-screen bg-yellow-100">
+<div class="flex flex-col h-screen w-screen">
 	<Header />
 	<div class="flex flex-row bg-white pl-48 pr-48 pt-16 pb-32">
 		<div class="flex flex-col w-1/2 pr-20">
