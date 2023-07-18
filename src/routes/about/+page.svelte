@@ -96,7 +96,7 @@
 		</div>
 		<div class="flex flex-row w-full pb-32">
 			<div class="flex flex-col w-full items-center pl-5 pr-5 lg:pl-20 lg:pr-20">
-				<h1 class="text-5xl font-bold pb-16">Meet our team!</h1>
+				<h1 class="text-5xl font-bold pb-16 text-center">Meet our team!</h1>
 				<div class="flex flex-col lg:flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
