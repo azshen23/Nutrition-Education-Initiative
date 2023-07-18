@@ -10,8 +10,8 @@
 		<div class="flex w-full items-center justify-center pt-20">
 			<h1 class="font-bold text-5xl">Contact</h1>
 		</div>
-		<div class="flex flex-row pl-48 pr-48 pt-16 pb-32">
-			<div class="flex flex-col w-1/2 pr-20">
+		<div class="flex flex-row pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-32">
+			<div class="flex flex-col w-full lg:w-1/2 lg:pr-20">
 				<form class="flex flex-col">
 					<label for="name" class="pt-5 pb-5 font-bold">Your Name</label>
 					<input
@@ -47,7 +47,7 @@
 					/>
 				</form>
 			</div>
-			<div class="flex flex-col w-1/2 pt-10 pl-20">
+			<div class="hidden lg:flex flex-col w-1/2 pt-10 pl-20">
 				<img src={HappyKids} alt="happykids" class="rounded-2xl" />
 			</div>
 		</div>
