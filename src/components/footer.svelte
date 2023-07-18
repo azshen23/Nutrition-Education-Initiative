@@ -26,7 +26,7 @@
 </script>
 
 <div class="flex flex-col justify-between items-center pt-20 pb-10 border-t bg-white">
-	<h1 class="text-5xl font-bold pb-20">Start Your Nutrition Journey</h1>
+	<h1 class="text-5xl font-bold pb-20 text-center lg:text-left">Start Your Nutrition Journey</h1>
 
 	<button
 		class="rounded-lg border-2 border-primary hover:bg-primary hover:text-white cursor-pointer text-primary font-bold pl-10 pr-10 pb-5 pt-5"
@@ -40,7 +40,9 @@
 			transition:fade
 			class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center"
 		>
-			<div class="bg-white rounded pl-40 pr-40 pb-10 pt-10 popup-container relative">
+			<div
+				class="bg-white rounded pl-20 pr-20 lg:pl-40 lg:pr-40 pb-10 pt-10 popup-container relative"
+			>
 				<button
 					class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
 					on:click={togglePopup}
@@ -58,11 +60,13 @@
 						/>
 					</svg>
 				</button>
-				<h1 class="text-2xl font-bold pb-10">Join Our Mailing List Today To Recieve Updates!</h1>
+				<h1 class="text-2xl font-bold pb-10 text-center lg:text-left">
+					Join Our Mailing List Today To Recieve Updates!
+				</h1>
 				<input
 					type="email"
 					placeholder="Email address"
-					class="w-full p-2 pr-40 border rounded mb-4"
+					class="w-full p-2 lg:pr-40 border rounded mb-4"
 				/>
 				<div class="flex row">
 					<button
