@@ -43,7 +43,7 @@
 				/>
 				<a
 					href="#mission"
-					class="rounded-lg border-primary border bg-white text-accent text-xl pl-32 pr-32 pb-5 pt-5"
+					class="rounded-lg border-primary border-2 font-bold bg-white text-accent text-xl pl-32 pr-32 pb-5 pt-5"
 					>Learn more</a
 				>
 			</div>
@@ -59,7 +59,7 @@
 							overall health.
 						</p>
 					</div>
-					<div class="flex-1 flex-col rounded-2xl bg-secondary pb-20 pt-10 pl-5 pr-5">
+					<div class="flex-1 flex-col rounded-2xl bg-primary pb-20 pt-10 pl-5 pr-5">
 						<h1 class="text-3xl text-center pb-8">Accessible</h1>
 						<p class="text-center">
 							N.E.I. provides accessible education to rural high school students, ensuring that
@@ -97,48 +97,48 @@
 				<h1 class="text-5xl font-bold pb-16">Meet our team!</h1>
 				<div class="flex flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-10">
+						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="President" class="w-80 h-80 rounded-3xl" />
 						</div>
-
-						<h1 class="text-3xl text-center pb-8">President</h1>
+						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
+						<h1 class="text-xl text-center pb-8">President</h1>
 					</div>
 					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-10">
+						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Vice President" class="w-80 h-80 rounded-3xl" />
 						</div>
-
-						<h1 class="text-3xl text-center pb-8">Vice President</h1>
+						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
+						<h1 class="text-xl text-center pb-8">Vice President</h1>
 					</div>
 					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-10">
+						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Secretary" class="w-80 h-80 rounded-3xl" />
 						</div>
-
-						<h1 class="text-3xl text-center pb-8">Secretary</h1>
+						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
+						<h1 class="text-xl text-center pb-8">Secretary</h1>
 					</div>
 				</div>
 				<div class="flex flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-10">
+						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Treasurer" class="w-80 h-80 rounded-3xl" />
 						</div>
-
-						<h1 class="text-3xl text-center pb-8">Treasurer</h1>
+						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
+						<h1 class="text-xl text-center pb-8">Treasurer</h1>
 					</div>
 					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-10">
+						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Other Person 1" class="w-80 h-80 rounded-3xl" />
 						</div>
-
-						<h1 class="text-3xl text-center pb-8">Other Person 1</h1>
+						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
+						<h1 class="text-2xl text-center pb-8">Other Person 1</h1>
 					</div>
 					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-10">
+						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Other Person 2" class="w-80 h-80 rounded-3xl" />
 						</div>
-
-						<h1 class="text-3xl text-center pb-8">Other Person 2</h1>
+						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
+						<h1 class="text-xl text-center pb-8">Other Person 2</h1>
 					</div>
 				</div>
 			</div>
