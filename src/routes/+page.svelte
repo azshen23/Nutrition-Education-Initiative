@@ -10,11 +10,12 @@
 		<div class="flex flex-col w-1/2 pr-20">
 			<h1 class="text-5xl font-bold pb-10">Empowering Students With Nutrition</h1>
 			<h1 class="text-2xl pb-10">Simple and Engaging Nutrition Education</h1>
-			<button
+			<a
 				class="flex rounded-md bg-primary justify-center items-center pb-3 pt-3 text-lg font-bold text-white"
+				href="/about"
 			>
 				Start Learning
-			</button>
+			</a>
 		</div>
 		<div class="flex flex-col w-1/2 pl-20">
 			<img class="rounded-lg" src={diverse_kids} alt="kids eating lunch" />
