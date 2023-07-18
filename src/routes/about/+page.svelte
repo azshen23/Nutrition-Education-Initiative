@@ -24,7 +24,7 @@
 <div class="flex flex-col h-screen w-screen">
 	<Header />
 	<div class="flex flex-col w-full">
-		<div class="flex flex-row w-full pl-48 pr-48 pt-16 pb-32">
+		<div class="flex flex-row w-full pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-32">
 			<div class="flex flex-col w-full items-center">
 				<h1 class="text-5xl font-bold pb-16">Who Are We?</h1>
 				<p class="text-lg text-center pb-20">
@@ -43,7 +43,7 @@
 				/>
 				<a
 					href="#mission"
-					class="rounded-lg border-primary border-2 font-bold bg-white text-accent text-xl pl-32 pr-32 pb-5 pt-5"
+					class="rounded-lg border-primary border-2 font-bold bg-white text-accent text-xl pl-20 pr-20 lg:pl-32 lg:pr-32 pb-5 pt-5"
 					>Learn more</a
 				>
 			</div>
@@ -51,7 +51,7 @@
 		<div class="flex flex-col w-full pb-32">
 			<div class="flex flex-col w-full items-center">
 				<h1 id="mission" class="text-5xl font-bold pt-10 pb-20">Our Mission</h1>
-				<div class="flex flex-row w-full pl-32 pr-32 gap-8">
+				<div class="flex md:flex-row flex-col w-full pl-10 pr-10 lg:pl-32 lg:pr-32 gap-8">
 					<div class="flex-1 flex-col rounded-2xl bg-secondary pb-20 pt-10 pl-5 pr-5">
 						<h1 class="text-3xl text-center pb-8">Empowering</h1>
 						<p class="text-center">
@@ -75,7 +75,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex flex-row w-full pl-48 pr-48 pt-16 pb-32">
+		<div
+			class="flex flex-row w-full pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-32 text-center lg:text-left"
+		>
 			<div class="flex flex-col w-full items-center">
 				<h1 class="text-5xl font-bold pb-16">Why are we here?</h1>
 				<p class="text-lg text-center pb-20">
@@ -93,9 +95,9 @@
 			</div>
 		</div>
 		<div class="flex flex-row w-full pb-32">
-			<div class="flex flex-col w-full items-center pl-20 pr-20">
+			<div class="flex flex-col w-full items-center pl-5 pr-5 lg:pl-20 lg:pr-20">
 				<h1 class="text-5xl font-bold pb-16">Meet our team!</h1>
-				<div class="flex flex-row w-full items-center text-center">
+				<div class="flex flex-col lg:flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="President" class="w-80 h-80 rounded-3xl" />
@@ -118,7 +120,7 @@
 						<h1 class="text-xl text-center pb-8">Secretary</h1>
 					</div>
 				</div>
-				<div class="flex flex-row w-full items-center text-center">
+				<div class="flex flex-col lg:flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Treasurer" class="w-80 h-80 rounded-3xl" />
