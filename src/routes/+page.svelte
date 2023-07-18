@@ -6,7 +6,9 @@
 
 <div class="flex flex-col h-screen w-screen">
 	<Header />
-	<div class="flex flex-col lg:flex-row bg-white pl-20 pr-20 lg:pl-48 lg:pr-48 pt-32 pb-32">
+	<div
+		class="flex flex-col lg:flex-row bg-white pl-5 pr-5 lg:pl-20 lg:pr-20 lg:pl-48 lg:pr-48 pt-32 pb-32"
+	>
 		<div class="flex flex-col w-full lg:w-1/2 lg:pr-20">
 			<h1 class="text-5xl font-bold pb-10 text-center lg:text-left">
 				Empowering Students With Nutrition
