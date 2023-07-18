@@ -11,7 +11,7 @@
 			<h1 class="text-5xl font-bold pb-10">Empowering Students With Nutrition</h1>
 			<h1 class="text-2xl pb-10">Simple and Engaging Nutrition Education</h1>
 			<a
-				class="flex rounded-md bg-primary justify-center items-center pb-3 pt-3 text-lg font-bold text-white"
+				class="flex rounded-md bg-primary hover:bg-accent cursor-pointer justify-center items-center pb-3 pt-3 text-lg font-bold text-white"
 				href="/about"
 			>
 				Start Learning

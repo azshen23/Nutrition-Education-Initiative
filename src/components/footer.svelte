@@ -29,7 +29,7 @@
 	<h1 class="text-5xl font-bold pb-20">Start Your Nutrition Journey</h1>
 
 	<button
-		class="rounded-lg border-2 border-primary text-primary font-bold pl-10 pr-10 pb-5 pt-5"
+		class="rounded-lg border-2 border-primary hover:bg-primary hover:text-white cursor-pointer text-primary font-bold pl-10 pr-10 pb-5 pt-5"
 		on:click|stopPropagation={togglePopup}
 	>
 		Enter your email to receive updates<button />
