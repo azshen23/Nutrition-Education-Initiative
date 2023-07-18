@@ -2,14 +2,38 @@
 	import Header from '../../components/header.svelte';
 	import Footer from '../../components/footer.svelte';
 	import HappyKids from '../../images/contact/happynutritonkids.png';
+	import { afterUpdate } from 'svelte';
 
 	let name = '';
 	let email = '';
 	let subject = '';
 	let message = '';
 
+	let isNameValid = true;
+	let isEmailValid = true;
+	let isSubjectValid = true;
+	let isMessageValid = true;
+
 	function handleSubmit() {
-		console.log('hello');
+		// Reset validation state
+		isNameValid = true;
+		isEmailValid = true;
+		isSubjectValid = true;
+		isMessageValid = true;
+
+		// Perform form validation
+		if (name.trim() === '') {
+			isNameValid = false;
+		}
+		if (email.trim() === '') {
+			isEmailValid = false;
+		}
+		if (subject.trim() === '') {
+			isSubjectValid = false;
+		}
+		if (message.trim() === '') {
+			isMessageValid = false;
+		}
 		var data = {
 			service_id: 'service_21cxrbi',
 			template_id: 'template_sflz257',
@@ -35,8 +59,15 @@
 				console.log('success', data);
 			})
 			.catch((error) => {
-				console.log(error.message);
+				console.log(error);
 			});
+		// Clear validation indications when fields change
+		afterUpdate(() => {
+			isNameValid = true;
+			isEmailValid = true;
+			isSubjectValid = true;
+			isMessageValid = true;
+		});
 	}
 </script>
 
@@ -59,6 +90,9 @@
 						placeholder="Full Name"
 						bind:value={name}
 					/>
+					{#if !isNameValid}
+						<p class="text-red-500">*Name is required</p>
+					{/if}
 					<label for="email" class="pt-10 pb-5 font-bold">Your Email</label>
 					<input
 						class="rounded-lg border-gray-300 border pt-4 pb-4 text-small font-thin pl-3"
@@ -69,6 +103,9 @@
 						placeholder="youremail@gexample.com"
 						bind:value={email}
 					/>
+					{#if !isEmailValid}
+						<p class="text-red-500">*Email is required</p>
+					{/if}
 					<label for="subject" class="pt-10 pb-5 font-bold">Subject</label>
 					<input
 						class="rounded-lg border-gray-300 border pt-4 pb-4 text-small font-thin pl-3"
@@ -78,6 +115,9 @@
 						placeholder="Subject"
 						bind:value={subject}
 					/>
+					{#if !isSubjectValid}
+						<p class="text-red-500">*Subject is required</p>
+					{/if}
 					<label for="message" class="pt-10 pb-5 font-bold">Message</label>
 					<textarea
 						class="rounded-lg border-gray-300 border pt-4 pb-4 text-small font-thin pl-3"
@@ -86,6 +126,9 @@
 						placeholder="Write Your Message Here"
 						bind:value={message}
 					/>
+					{#if !isMessageValid}
+						<p class="text-red-500">*Message is required</p>
+					{/if}
 					<input
 						class="rounded-lg bg-primary hover:bg-accent cursor-pointer text-white pb-4 pt-4 mt-10 font-bold"
 						type="submit"
