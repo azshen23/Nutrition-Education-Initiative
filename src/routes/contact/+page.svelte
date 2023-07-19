@@ -14,6 +14,9 @@
 	let isSubjectValid = true;
 	let isMessageValid = true;
 
+	let isSubmitted = false;
+	let isSubmitError = false;
+
 	function handleSubmit() {
 		// Reset validation state
 		isNameValid = true;
@@ -45,29 +48,37 @@
 				message: message
 			}
 		};
-		console.log(data);
-		fetch('https://api.emailjs.com/api/v1.0/email/send', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-				// Add any other headers if needed
-			},
-			body: JSON.stringify(data)
-		})
-			.then((response) => response.json())
-			.then((data) => {
-				console.log('success', data);
+		if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
+			fetch('https://api.emailjs.com/api/v1.0/email/send', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+					// Add any other headers if needed
+				},
+				body: JSON.stringify(data)
 			})
-			.catch((error) => {
-				console.log(error);
-			});
-		// Clear validation indications when fields change
-		afterUpdate(() => {
-			isNameValid = true;
-			isEmailValid = true;
-			isSubjectValid = true;
-			isMessageValid = true;
-		});
+				.then((response) => {
+					if (response.ok) {
+						console.log('success', response);
+						name = '';
+						email = '';
+						subject = '';
+						message = '';
+						isSubmitted = true;
+					} else {
+						throw new Error(response.statusText);
+					}
+				})
+				.catch((error) => {
+					console.log('Error:', error);
+				});
+		}
+	}
+	$: {
+		isNameValid = true;
+		isEmailValid = true;
+		isSubjectValid = true;
+		isMessageValid = true;
 	}
 </script>
 
@@ -136,6 +147,18 @@
 					/>
 				</form>
 			</div>
+			{#if isSubmitted}
+				<div class="fixed inset-0 flex items-center justify-center z-50">
+					<div class="bg-white rounded-lg p-8 shadow-lg">
+						<h2 class="text-2xl font-bold mb-4">Success!</h2>
+						<p>Your message has been submitted successfully.</p>
+						<button
+							class="mt-6 bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded-lg"
+							on:click={() => (isSubmitted = false)}>Close</button
+						>
+					</div>
+				</div>
+			{/if}
 			<div class="hidden lg:flex flex-col w-1/2 pt-10 pl-20">
 				<img src={HappyKids} alt="happykids" class="rounded-2xl" />
 			</div>
