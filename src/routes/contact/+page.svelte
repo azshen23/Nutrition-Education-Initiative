@@ -88,7 +88,7 @@
 		<div class="flex w-full items-center justify-center pt-20">
 			<h1 class="font-bold text-5xl">Contact</h1>
 		</div>
-		<div class="flex flex-row pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-32">
+		<div class="flex flex-row pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-24">
 			<div class="flex flex-col w-full lg:w-1/2 lg:pr-20">
 				<form class="flex flex-col" on:submit|preventDefault={handleSubmit}>
 					<label for="name" class="pt-5 pb-5 font-bold">Your Name</label>
@@ -161,6 +161,24 @@
 			{/if}
 			<div class="hidden lg:flex flex-col w-1/2 pt-10 pl-20">
 				<img src={HappyKids} alt="happykids" class="rounded-2xl" />
+			</div>
+		</div>
+	</div>
+	<div class="flex w-full pl-10 pr-10 lg:pl-48 lg:pr-48 pb-40">
+		<div
+			class="flex flex-col lg:flex-row w-full rounded-lg bg-gray-200 pl-20 pr-20 pb-16 pt-16 justify-between"
+		>
+			<div class="flex flex-col">
+				<h1 class="text-center font-bold text-xl pb-2 lg:pb-5">Call us</h1>
+				<h2 class="text-center text-lg pb-6 lg:pb-0">+15832034839</h2>
+			</div>
+			<div class="flex flex-col">
+				<h1 class="text-center font-bold text-xl pb-2 lg:pb-5">Email Us</h1>
+				<h2 class="text-center text-lg pb-6 lg:pb-0">info@example.com</h2>
+			</div>
+			<div class="flex flex-col">
+				<h1 class="text-center font-bold text-xl pb-2 lg:pb-5">Visit us</h1>
+				<h2 class="text-center text-lg pb-6 lg:pb-0">Some Address</h2>
 			</div>
 		</div>
 	</div>

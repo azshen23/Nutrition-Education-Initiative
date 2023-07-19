@@ -49,7 +49,7 @@
 		</div>
 	</div>
 	<div
-		class="hidden sm:flex flex-row justify-between items-center pl-20 pr-20 pt-10 pb-10 bg-white border-b"
+		class="hidden sm:flex flex-row justify-between items-center pl-20 pr-20 pt-5 pb-5 bg-white border-b"
 	>
 		<a href="/">
 			<img src={logoNoBg} alt="NEI logo" width="150" height="150" />
