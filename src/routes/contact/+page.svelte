@@ -82,7 +82,7 @@
 	}
 </script>
 
-<div class="flex flex-col h-screen w-screen">
+<div class="flex flex-col h-screen w-full">
 	<Header />
 	<div class="flex flex-col w-full pb-20">
 		<div class="flex w-full items-center justify-center pt-20">

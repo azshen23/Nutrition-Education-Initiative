@@ -3,6 +3,9 @@
 	import Footer from '../../components/footer.svelte';
 	import KidBanner from '../../images/about-us/parent-feeding-kid.jpg';
 	import President from '../../images/about-us/president.jpeg';
+	import VicePresident from '../../images/about-us/MaxVerbruggeHeadshot.png';
+	import Secretary from '../../images/about-us/DanielleCalimente.png';
+	import Treasurer from '../../images/about-us/ElizabethDarga.png';
 
 	import { onMount } from 'svelte';
 	onMount(() => {
@@ -21,7 +24,7 @@
 	});
 </script>
 
-<div class="flex flex-col h-screen w-screen">
+<div class="flex flex-col h-screen w-full m-0 p-0">
 	<Header />
 	<div class="flex flex-col w-full">
 		<div class="flex flex-row w-full pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-32">
@@ -96,51 +99,51 @@
 		</div>
 		<div class="flex flex-row w-full pb-32">
 			<div class="flex flex-col w-full items-center pl-5 pr-5 lg:pl-20 lg:pr-20">
-				<h1 class="text-5xl font-bold pb-16 text-center">Meet our team!</h1>
+				<h1 class="text-5xl font-bold pb-16 text-center">Meet our board of directors!</h1>
 				<div class="flex flex-col lg:flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="President" class="w-80 h-80 rounded-3xl" />
 						</div>
 						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<h1 class="text-xl text-center pb-8">President</h1>
+						<!-- 	<h1 class="text-xl text-center pb-8">President</h1> -->
 					</div>
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
-							<img src={President} alt="Vice President" class="w-80 h-80 rounded-3xl" />
+							<img src={VicePresident} alt="Vice President" class="w-80 h-80 rounded-3xl" />
 						</div>
-						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<h1 class="text-xl text-center pb-8">Vice President</h1>
+						<h1 class="text-2xl text-center pb-4">Maxwell Verbrugge</h1>
+						<!-- 	<h1 class="text-xl text-center pb-8">Vice President</h1> -->
 					</div>
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
-							<img src={President} alt="Secretary" class="w-80 h-80 rounded-3xl" />
+							<img src={Secretary} alt="Secretary" class="w-80 h-80 rounded-3xl" />
 						</div>
-						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<h1 class="text-xl text-center pb-8">Secretary</h1>
+						<h1 class="text-2xl text-center pb-4">Danielle Calimente</h1>
+						<!-- <h1 class="text-xl text-center pb-8">Secretary</h1> -->
 					</div>
 				</div>
 				<div class="flex flex-col lg:flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
-							<img src={President} alt="Treasurer" class="w-80 h-80 rounded-3xl" />
+							<img src={Treasurer} alt="Treasurer" class="w-80 h-80 rounded-3xl" />
 						</div>
-						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<h1 class="text-xl text-center pb-8">Treasurer</h1>
+						<h1 class="text-2xl text-center pb-4">Elizabeth Darga</h1>
+						<!-- <h1 class="text-xl text-center pb-8">Treasurer</h1> -->
 					</div>
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Other Person 1" class="w-80 h-80 rounded-3xl" />
 						</div>
 						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<h1 class="text-2xl text-center pb-8">Other Person 1</h1>
+						<!-- 	<h1 class="text-2xl text-center pb-8">Other Person 1</h1> -->
 					</div>
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="Other Person 2" class="w-80 h-80 rounded-3xl" />
 						</div>
 						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<h1 class="text-xl text-center pb-8">Other Person 2</h1>
+						<!-- <h1 class="text-xl text-center pb-8">Other Person 2</h1> -->
 					</div>
 				</div>
 			</div>
