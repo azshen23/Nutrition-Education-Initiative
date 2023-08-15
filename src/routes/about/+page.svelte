@@ -131,20 +131,6 @@
 						<h1 class="text-2xl text-center pb-4">Elizabeth Darga</h1>
 						<!-- <h1 class="text-xl text-center pb-8">Treasurer</h1> -->
 					</div>
-					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-5">
-							<img src={President} alt="Other Person 1" class="w-80 h-80 rounded-3xl" />
-						</div>
-						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<!-- 	<h1 class="text-2xl text-center pb-8">Other Person 1</h1> -->
-					</div>
-					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-5">
-							<img src={President} alt="Other Person 2" class="w-80 h-80 rounded-3xl" />
-						</div>
-						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<!-- <h1 class="text-xl text-center pb-8">Other Person 2</h1> -->
-					</div>
 				</div>
 			</div>
 		</div>
