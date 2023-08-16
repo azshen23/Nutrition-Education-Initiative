@@ -98,9 +98,11 @@
 			</div>
 		</div>
 		<div class="flex flex-row w-full pb-32">
-			<div class="flex flex-col w-full items-center pl-5 pr-5 lg:pl-20 lg:pr-20">
+			<div class="flex flex-col w-full pl-5 pr-5 lg:pl-20 lg:pr-20">
 				<h1 class="text-5xl font-bold pb-16 text-center">Meet our board of directors!</h1>
-				<div class="flex flex-col lg:flex-row w-full items-center text-center">
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-4 lg:flex-row w-full items-center text-center"
+				>
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
 							<img src={President} alt="President" class="w-80 h-80 rounded-3xl" />
@@ -122,8 +124,6 @@
 						<h1 class="text-2xl text-center pb-4">Danielle Calimente</h1>
 						<!-- <h1 class="text-xl text-center pb-8">Secretary</h1> -->
 					</div>
-				</div>
-				<div class="flex flex-col lg:flex-row w-full items-center text-center">
 					<div class="flex-1 flex-col">
 						<div class="flex items-center justify-center pb-5">
 							<img src={Treasurer} alt="Treasurer" class="w-80 h-80 rounded-3xl" />
