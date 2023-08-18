@@ -1,7 +1,7 @@
 <script>
 	import Header from '../../components/header.svelte';
 	import Footer from '../../components/footer.svelte';
-	import KidBanner from '../../images/about-us/parent-feeding-kid.jpg';
+	import example1 from '../../images/about-us/example1.png';
 	import President from '../../images/about-us/president.jpeg';
 	import VicePresident from '../../images/about-us/MaxVerbruggeHeadshot.png';
 	import Secretary from '../../images/about-us/DanielleCalimente.png';
@@ -27,23 +27,27 @@
 <div class="flex flex-col h-screen w-full m-0 p-0">
 	<Header />
 	<div class="flex flex-col w-full">
-		<div class="flex flex-row w-full pl-10 pr-10 lg:pl-48 lg:pr-48 pt-16 pb-32">
+		<div class="flex flex-row w-full pl-10 pr-10 pt-16 pb-32">
 			<div class="flex flex-col w-full items-center">
 				<h1 class="text-5xl font-bold pb-16 text-center">Who Are We?</h1>
-				<p class="text-lg text-center pb-20">
-					The Nutrition Education Initiative (NEI) is a medical student lead organization that was
-					founded in 2020 with both an educational and research directed focus. The educational goal
-					of NEI is to equip rural high school students with nutrition knowledge that will foster
-					healthy eating behaviors beyond high school. The research goal of NEI is to examine
-					attitude, behavioral, and knowledge changes through its education.
-				</p>
+				<div class="flex flex-col lg:flex-row w-full items-center justify-center pb-40">
+					<div class="flex flex-col w-full lg:w-1/3 items-center">
+						<img src={example1} alt="Example1" class="w-96 rounded-2xl" />
+					</div>
+					<div class="flex flex-col w-full lg:w-1/2 items-center justify-center">
+						<p
+							class="text-xl font-medium text-center md:text-start md:pb-20 lg:pr-60 md:pr-20 md:pl-20 pt-20 lg:pt-0"
+						>
+							The Nutrition Education Initiative (NEI) is a medical student lead organization that
+							was founded in 2020 with both an educational and research directed focus. The
+							educational goal of NEI is to equip rural high school students with nutrition
+							knowledge that will foster healthy eating behaviors beyond high school. The research
+							goal of NEI is to examine attitude, behavioral, and knowledge changes through its
+							education.
+						</p>
+					</div>
+				</div>
 
-				<img
-					src={KidBanner}
-					width="700"
-					class="rounded-xl rounded-b-xl pb-20"
-					alt="kid being fed"
-				/>
 				<a
 					href="#mission"
 					class="rounded-lg border-primary border-2 font-bold bg-white text-accent text-xl pl-20 pr-20 lg:pl-32 lg:pr-32 pb-5 pt-5"

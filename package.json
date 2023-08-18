@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@emailjs/browser": "^3.11.0"
+		"@emailjs/browser": "^3.11.0",
+		"@splidejs/svelte-splide": "^0.2.9"
 	}
 }
