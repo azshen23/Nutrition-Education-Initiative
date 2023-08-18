@@ -36,15 +36,14 @@
 		'Teacher at Mount Pleasant High School'
 	];
 
-	/**
-	 * @param {string} filename
-	 */
-	function handleDownload(filename) {
-		const link = document.createElement('a');
-		link.href = `../assets/powerpoints/${filename}`;
-		link.download = filename;
-		link.target = '_blank'; // Open the link in a new tab to trigger the download
-		link.click();
+	function downloadPowerpoint() {
+		const downloadLink = document.createElement('a');
+		downloadLink.href = 'src/downloads/jeoparody.pptx'; // Path to your PowerPoint file
+		downloadLink.download = 'jeoparody.pptx'; // Desired download filename
+		downloadLink.style.display = 'none';
+		document.body.appendChild(downloadLink);
+		downloadLink.click();
+		document.body.removeChild(downloadLink);
 	}
 </script>
 
@@ -53,19 +52,21 @@
 	<div
 		class="flex flex-col lg:flex-row bg-white pl-5 pr-5 lg:pl-20 lg:pr-20 lg:pl-48 lg:pr-48 pt-32 pb-32"
 	>
-		<div class="flex flex-col w-full lg:w-1/2 lg:pr-20">
-			<h1 class="text-5xl font-bold pb-10 text-center lg:text-left">
-				Empowering Students With Nutrition
-			</h1>
-			<h1 class="text-2xl pb-10 text-center lg:text-left">
-				Simple and Engaging Nutrition Education
-			</h1>
-			<a
-				class="flex rounded-md bg-primary hover:bg-accent cursor-pointer justify-center items-center pb-3 pt-3 text-lg font-bold text-white"
-				href="/about"
-			>
-				Start Learning
-			</a>
+		<div class="flex flex-col w-full justify-center lg:w-1/2 lg:pr-20">
+			<div>
+				<h1 class="text-5xl font-bold pb-10 text-center lg:text-left">
+					Empowering Students With Nutrition
+				</h1>
+				<h1 class="text-2xl pb-10 text-center lg:text-left">
+					Simple and Engaging Nutrition Education
+				</h1>
+				<a
+					class="flex rounded-md bg-primary hover:bg-accent cursor-pointer justify-center items-center pb-3 pt-3 text-lg font-bold text-white"
+					href="/about"
+				>
+					Start Learning
+				</a>
+			</div>
 		</div>
 		<div class="flex flex-col w-full lg:w-1/2 pt-20 lg:pt-0 lg:pl-20">
 			<img class="rounded-lg" src={diverse_kids} alt="kids eating lunch" />
@@ -121,7 +122,7 @@
 				<div class="pt-5" />
 				<button
 					class="flex rounded-md bg-primary hover:bg-accent cursor-pointer justify-center items-center p-3 text-lg font-bold text-white"
-					on:click={() => handleDownload('jeoparody.pptx')}>Download Here</button
+					on:click={downloadPowerpoint}>Download Here</button
 				>
 			</div>
 			<div class="pt-5 flex lg:hidden" />
@@ -130,7 +131,7 @@
 				<div class="pt-5" />
 				<button
 					class="flex rounded-md bg-primary hover:bg-accent cursor-pointer justify-center items-center p-3 text-lg font-bold text-white"
-					on:click={() => handleDownload('nutrition.pptx')}>Download Here</button
+					>Download Here</button
 				>
 			</div>
 		</div>
