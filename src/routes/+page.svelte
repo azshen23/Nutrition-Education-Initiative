@@ -41,7 +41,7 @@
 	 */
 	function handleDownload(filename) {
 		const link = document.createElement('a');
-		link.href = `src/assets/powerpoints/${filename}`;
+		link.href = `../assets/powerpoints/${filename}`;
 		link.download = filename;
 		link.target = '_blank'; // Open the link in a new tab to trigger the download
 		link.click();
