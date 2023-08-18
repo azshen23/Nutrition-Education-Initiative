@@ -25,20 +25,20 @@
 	];
 
 	const quoteAuthor = [
-		'Teacher at Mount Pleasant High School',
-		'Teacher at Mount Pleasant High School',
-		'Teacther at Beal City High School',
-		'Teacher at Mount Pleasant High School',
-		'Teacther at Beal City High School',
-		'Teacher at Mount Pleasant High School',
-		'Teacther at Beal City High School',
-		'Teacther at Beal City High School',
-		'Teacher at Mount Pleasant High School'
+		'Mount Pleasant High School',
+		'Mount Pleasant High School',
+		'Beal City High School',
+		'Mount Pleasant High School',
+		'Beal City High School',
+		'Mount Pleasant High School',
+		'Beal City High School',
+		'Beal City High School',
+		'Mount Pleasant High School'
 	];
 
 	function downloadPowerpoint() {
 		const downloadLink = document.createElement('a');
-		downloadLink.href = 'src/downloads/jeoparody.pptx'; // Path to your PowerPoint file
+		downloadLink.href = '../images/home/jeoparody.pptx'; // Path to your PowerPoint file
 		downloadLink.download = 'jeoparody.pptx'; // Desired download filename
 		downloadLink.style.display = 'none';
 		document.body.appendChild(downloadLink);
