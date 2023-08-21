@@ -2,10 +2,12 @@
 	import Header from '../../components/header.svelte';
 	import Footer from '../../components/footer.svelte';
 	import example1 from '../../images/about-us/example1.png';
-	import President from '../../images/about-us/president.jpeg';
-	import VicePresident from '../../images/about-us/MaxVerbruggeHeadshot.png';
-	import Secretary from '../../images/about-us/DanielleCalimente.png';
-	import Treasurer from '../../images/about-us/ElizabethDarga.png';
+	import Board1 from '../../images/about-us/president.jpeg';
+	import Board2 from '../../images/about-us/MaxVerbruggeHeadshot.png';
+	import Board3 from '../../images/about-us/DanielleCalimente.png';
+	import Board4 from '../../images/about-us/ElizabethDarga.png';
+	import MtPleasant1 from '../../images/about-us/JamesChung.png';
+	import MtPleasant2 from '../../images/about-us/SimoneRhodes.png';
 
 	import { onMount } from 'svelte';
 	onMount(() => {
@@ -22,6 +24,36 @@
 			});
 		});
 	});
+
+	const boardList = [
+		{
+			name: 'Nathan Shen',
+			img: Board1
+		},
+		{
+			name: 'Max Verbrugge',
+			img: Board2
+		},
+		{
+			name: 'Danielle Calimente',
+			img: Board3
+		},
+		{
+			name: 'Elizabeth Darga',
+			img: Board4
+		}
+	];
+
+	const mtPleasantBoardList = [
+		{
+			name: 'James Chung',
+			img: MtPleasant1
+		},
+		{
+			name: 'Simone Rhodes',
+			img: MtPleasant2
+		}
+	];
 </script>
 
 <div class="flex flex-col h-screen w-full m-0 p-0">
@@ -107,34 +139,31 @@
 				<div
 					class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-4 lg:flex-row w-full items-center text-center"
 				>
-					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-5">
-							<img src={President} alt="President" class="w-80 h-80 rounded-3xl" />
+					{#each boardList as boardMember, i}
+						<div class="flex-1 flex-col">
+							<div class="flex items-center justify-center pb-5">
+								<img src={boardMember.img} alt="President" class="w-80 h-80 rounded-3xl" />
+							</div>
+							<h1 class="text-2xl text-center pb-4">{boardMember.name}</h1>
 						</div>
-						<h1 class="text-2xl text-center pb-4">Nathan Shen</h1>
-						<!-- 	<h1 class="text-xl text-center pb-8">President</h1> -->
-					</div>
-					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-5">
-							<img src={VicePresident} alt="Vice President" class="w-80 h-80 rounded-3xl" />
+					{/each}
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-row w-full pb-32">
+			<div class="flex flex-col w-full pl-5 pr-5 lg:pl-20 lg:pr-20">
+				<h1 class="text-3xl font-bold pb-16 text-center">Mt. Pleasant Branch Leaders</h1>
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-4 lg:flex-row w-full items-center text-center"
+				>
+					{#each mtPleasantBoardList as boardMember, i}
+						<div class="flex-1 flex-col">
+							<div class="flex items-center justify-center pb-5">
+								<img src={boardMember.img} alt="President" class="w-80 h-80 rounded-3xl" />
+							</div>
+							<h1 class="text-2xl text-center pb-4">{boardMember.name}</h1>
 						</div>
-						<h1 class="text-2xl text-center pb-4">Maxwell Verbrugge</h1>
-						<!-- 	<h1 class="text-xl text-center pb-8">Vice President</h1> -->
-					</div>
-					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-5">
-							<img src={Secretary} alt="Secretary" class="w-80 h-80 rounded-3xl" />
-						</div>
-						<h1 class="text-2xl text-center pb-4">Danielle Calimente</h1>
-						<!-- <h1 class="text-xl text-center pb-8">Secretary</h1> -->
-					</div>
-					<div class="flex-1 flex-col">
-						<div class="flex items-center justify-center pb-5">
-							<img src={Treasurer} alt="Treasurer" class="w-80 h-80 rounded-3xl" />
-						</div>
-						<h1 class="text-2xl text-center pb-4">Elizabeth Darga</h1>
-						<!-- <h1 class="text-xl text-center pb-8">Treasurer</h1> -->
-					</div>
+					{/each}
 				</div>
 			</div>
 		</div>
