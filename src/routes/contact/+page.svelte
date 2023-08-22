@@ -4,6 +4,10 @@
 	import HappyKids from '../../images/contact/happynutritonkids.png';
 	import { afterUpdate } from 'svelte';
 
+	const contactInfo = {
+		number: '+1 (734) 238-3067',
+		email: 'NutritionEducationInitiative@gmail.com'
+	};
 	let name = '';
 	let email = '';
 	let subject = '';
@@ -164,21 +168,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex w-full pl-10 pr-10 lg:pl-48 lg:pr-48 pb-40">
+	<div class="flex flex-col w-full pb-40 items-center">
 		<div
-			class="flex flex-col lg:flex-row w-full rounded-lg bg-gray-200 pl-20 pr-20 pb-16 pt-16 justify-between"
+			class="flex flex-col lg:flex-row w-full lg:w-3/5 rounded-lg bg-gray-200 pl-20 pr-20 pb-16 pt-16 justify-between"
 		>
 			<div class="flex flex-col">
 				<h1 class="text-center font-bold text-xl pb-2 lg:pb-5">Call us</h1>
-				<h2 class="text-center text-lg pb-6 lg:pb-0">+15832034839</h2>
+				<h2 class="text-center text-lg pb-6 lg:pb-0">{contactInfo.number}</h2>
 			</div>
 			<div class="flex flex-col">
 				<h1 class="text-center font-bold text-xl pb-2 lg:pb-5">Email Us</h1>
-				<h2 class="text-center text-lg pb-6 lg:pb-0">info@example.com</h2>
-			</div>
-			<div class="flex flex-col">
-				<h1 class="text-center font-bold text-xl pb-2 lg:pb-5">Visit us</h1>
-				<h2 class="text-center text-lg pb-6 lg:pb-0">Some Address</h2>
+				<h2 class="text-center text-lg pb-6 lg:pb-0">{contactInfo.email}</h2>
 			</div>
 		</div>
 	</div>
