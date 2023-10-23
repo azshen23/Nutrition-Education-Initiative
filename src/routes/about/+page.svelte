@@ -64,7 +64,7 @@
 				<h1 class="text-5xl font-bold pb-16 text-center">Who Are We?</h1>
 				<div class="flex flex-col lg:flex-row w-full items-center justify-center pb-40">
 					<div class="flex flex-col w-full lg:w-1/3 items-center">
-						<img src={example1} alt="Example1" class="w-96 rounded-2xl" />
+						<img src={example1} alt="Example1" class="w-96 rounded-2xl opacity-0" />
 					</div>
 					<div class="flex flex-col w-full lg:w-1/2 items-center justify-center">
 						<p

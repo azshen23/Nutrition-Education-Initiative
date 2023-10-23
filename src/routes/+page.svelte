@@ -77,7 +77,7 @@
 		<h1 class="text-center text-lg pb-10">What people are saying about us...</h1>
 		<div class="flex flex-row w-full md:pl-20 md:pr-10">
 			<div class="hidden: md:flex flex-col w-[35%] items-center justify-center">
-				<img src={person1} alt="classroom" class="rounded-2xl w-4/5" />
+				<img src={person1} alt="classroom" class="rounded-2xl w-4/5 opacity-0" />
 			</div>
 			<div class="flex flex-col w-full md:w-[65%] items-center">
 				<div class="flex flex-col w-full md:w-5/6">
